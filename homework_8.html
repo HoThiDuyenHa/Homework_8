@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./homework_8.js"></script>
+    <style>
+      .container{
+        width:600px;
+        border:1px solid rgb(73, 60, 190);
+        margin-left:300px;
+      }
+        h1{
+          text-align: center;
+        }
+        .frm{
+           
+          margin-left: 30px;
+            
+        }
+        #add{
+           color:white;
+           background-color:rgb(47, 47, 50);
+           border-radius: 5px;
+           margin:15px;
+        }
+
+        #table{
+          width:500px;
+          margin-left: 30px;
+          border: 1px solid grey;
+        }
+      
+        #table tr th{
+           text-align: center;
+           color:white;
+           background-color: rgb(47, 47, 50);
+           border-bottom: 1px solid #ccc;
+
+        }
+        #table tr:last-child td{
+          border:none;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+      <h1>Clothes</h1>
+      <form class="frm">
+          <p>Product Name:</p>
+          <input type="text" name="pname" id="pname">
+
+          <p>Product Quantity:</p>
+          <input type="number" name="pqty" id="pqty">
+
+          <p>Product Price:</p>
+          <input type="number" name="price" id="price">
+      </form>
+      <button id="add" value="add "onclick="Add()">Add</button>
+      <table id="table">
+        <thead>
+          <tr>
+              <th>No</th>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Sub Total</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="4" >Total</th> 
+            <th id="total"></th>
+          </tr>
+       </tfoot>
+      </table>
+   </div>   
+</body>
+</html>
